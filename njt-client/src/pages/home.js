@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
+import {
+    Link
+  } from "react-router-dom";
 
 // jpeg icons
 import handshake from '../images/Icons/handshake.jpg'
 import recycle from '../images/Icons/recycleicon.jpg'
 import plcIcon from '../images/Icons/plcIcon.jpg'
+
+//Images
 import parts from '../images/parts.jpg'
 import worker from '../images/worker.jpg'
 import machines from '../images/machines.jpg'
@@ -21,13 +26,10 @@ class home extends Component {
         return (
           
             <div>
-            
-            
             <div className="header">
             <h1> Keeping The Machines Alive </h1>
             <h2> One part can hinge an entire operation </h2>
             </div>
-
             <div className="section">
             <div className="section1">
             <Grid container spacing={16}
@@ -44,8 +46,8 @@ class home extends Component {
             </h1>  
             </div>
 
-            </Grid>
-            <Grid item sm={3} xs={12}>
+            </Grid> 
+            <Grid item sm={3} xs={12} button component={Link} to="/sell" style={{ textDecoration: 'none' }}>
                 <div className="block">
                 <img src={handshake}>
                 </img>
@@ -56,7 +58,7 @@ class home extends Component {
                 </div>
                 </div>
             </Grid>
-            <Grid item sm={3} xs={12}>
+            <Grid item sm={3} xs={12} button component={Link} to="/E-waste" style={{ textDecoration: 'none' }}>
                 <div className="block">
                 <img src={recycle}>
                 </img>
@@ -69,7 +71,7 @@ class home extends Component {
                 </div>
             </div>
             </Grid>
-                <Grid item sm={3} xs={12}>
+                <Grid item sm={3} xs={12} button component={Link} to="/sourcing" style={{ textDecoration: 'none' }}>
                  <div className="block">
                  <img src={plcIcon}>
                  </img>
@@ -91,13 +93,9 @@ class home extends Component {
             <div className="wanted">
             <h1>AUTOMATION COMPONENTS WANTED</h1>
             </div>
-
-            
-
             <Grid container spacing={16}
                 direction="row"
                 >
-
                 <Grid item sm={6} xs={12}>
             <div className="parts">
             <h1>
@@ -116,7 +114,6 @@ class home extends Component {
             </section>
             and similar industrial controls
             </h1>
-            
             <h2>
             Brands:
             Rockwell Automation, Allen Bradley, Siemens, Lenze, 
@@ -127,7 +124,6 @@ class home extends Component {
             </h2>
             </div>
             </Grid>
-            
             <Grid item sm={12} xs={12}
             >
             <img className="partsImage" src={parts}>
@@ -142,20 +138,17 @@ class home extends Component {
             <div>saves jobs</div>
             and our planet</h1>
             <img src={worker}>
-
             </img>
             </div>
-
             <div className="machines">
             <h1>
             NJT
-           
-            <h2>(414)331-5954</h2>
+            <div className="phone"> (414)331-5954</div>
             </h1>
+            
             <img className="machines" src={machines}>
             </img>
             </div>
-
             <div className="globe">
             <h1>
             Every corner of the globe

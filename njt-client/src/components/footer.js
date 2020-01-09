@@ -4,18 +4,16 @@ import { makeStyles } from '@material-ui/core/styles';
 //MUI
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import Tooltip from '@material-ui/core/Tooltip';
 
 // Mui Icons
-import PhoneForwardedIcon from '@material-ui/icons/PhoneForwarded';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import MessageIcon from '@material-ui/icons/Message';
-import EmailIcon from '@material-ui/icons/Email';
+import faceIcon from '../images/Icons/faceiconwhte.png'
+
+//icons
+import Icons from './icons'
 
 //CSS
 import'../App.css';
+
 
 
 
@@ -44,9 +42,58 @@ icons: {
         color: '#FFFFFF',
     },
 },
-rightIcons: {
-    padding: '2rem',
+footer: {
+  width: '100%',
+  paddingTop: 10,
+  paddingBottom: 15,
+  display: 'flex',
+  height: 180,
+  overflow: 'hidden'
 },
+centered1: {
+  margin: 'auto',
+  height: 150,
+},
+
+footerImage:{
+  height: 180,
+},
+
+right: {
+position: 'absolute',
+width:'45%',
+right: 0,
+top: '50%',
+transform: 'translate(-0%, -50%)',
+overflow: 'hidden',
+[theme.breakpoints.down('xs')]: {
+  fontSize: '.7rem',
+  width:'20%',
+  marginRight: 12
+},
+},
+
+left: {
+  position: 'absolute',
+  width:'45%',
+  left: 0,
+  textAlign: 'right',
+  top: '50%',
+  transform: 'translate(-0%, -50%)',
+  fontFamily: 'Helvetica Neue',
+  fontSize: '1rem',
+  color: '#707070',
+  [theme.breakpoints.down('xs')]: {
+    fontSize: '.7rem',
+    width:'30%',
+  },
+  },
+  njt:{
+    fontFamily: 'FunCity',
+    paddingRight: 20,
+    color: 'white'
+  },
+
 
 }));
 
@@ -56,31 +103,24 @@ export default function Navbar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar  className={classes.Toolbar} centered >
+        <Toolbar  className={classes.Toolbar} centered='True' >
         
     
+        <div className={classes.footer}>  
 
-          <div className={classes.rightIcons}>  
-          <Tooltip title="Call NJT">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <PhoneForwardedIcon className={classes.icons} />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Send Text Message">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MessageIcon className={classes.icons} />
-          </IconButton>
-          </Tooltip>
-
-          <Tooltip title="Email NJT">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <EmailIcon  className={classes.icons} />
-          </IconButton>
-          </Tooltip>
-
+        <div className={classes.centered1}>  
+          <img src={faceIcon} className={classes.footerImage}/>
+          </div>       
+          <div className={classes.right}>  
+          <Icons/>
           </div>
 
+          <div className={classes.left}>  
+          <h1>CONTACT
+          <div className={classes.njt}> NJT </div>
+          </h1>
+          </div>
+          </div>  
         </Toolbar>
       </AppBar>
     </div>

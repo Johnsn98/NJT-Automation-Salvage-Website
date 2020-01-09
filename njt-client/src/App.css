@@ -1,12 +1,12 @@
 @media only screen and (max-width: 600px) {
-.wanted h1{
-  margin-top: 660px;
+  .partsImage{
+  margin-top: 120px;
 }
 }
 
 @media only screen and (max-width: 600px) {
 .section1{
-  height: 960px;
+  height: 200px;
   background-color: #EDEDED;
 }
 .section1 .block {
@@ -19,6 +19,12 @@
   font-family: 'FunCity';
   src: local('FunCity'), url(./fonts/FunCityLevel2Stencil.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'Robot';
+  src: local('ROBOT'), url(./fonts/ROBOT.ttf) format('opentype');
+}
+
 
 
 body {
@@ -91,6 +97,7 @@ padding-top: 50px;
   font-family: Arial, Helvetica, sans-serif;
   color: #959595;
   overflow: hidden;
+  text-decoration: none;
 }
 
 .section1 .block:hover{
@@ -105,9 +112,10 @@ padding-top: 50px;
 }
 
 .section1 .block:active{
-  -webkit-box-shadow:inset 0px 0px 0px 3px #a1a1a1; ;
-    -moz-box-shadow:inset 0px 0px 0px 3px #a1a1a1; ;
-    box-shadow:inset 0px 0px 0px 3px #a1a1a1; ;
+  -webkit-box-shadow:inset 0px 0px 0px 3px #67c7ff; ;
+    -moz-box-shadow:inset 0px 0px 0px 3px #67c7ff; ;
+    box-shadow:inset 0px 0px 0px 3px #67c7ff; ;
+      border-color: #67c7ff;
   color: rgb(50, 68, 151);
   cursor: pointer;
   position: relative;
@@ -121,26 +129,38 @@ padding-top: 50px;
   width: 110px;
   margin: 15px 35px;
   opacity: 0.6;
+  text-decoration: none;
 }
 .block div {
   margin-left: 15px;
+  text-decoration: none;
 }
+.block .text {
+  text-decoration: none;
 
+}
 
 .section1 .firstchild {
   width: 260px;
 }
 
+.phone {
+  font-family: 'Helvetica Neue','Cantarell', 'Fira Sans', 'Droid Sans';
+  font-size: 4rem;
+
+}
 
 .logo {
   font-family: FunCity;
   font-size: 3rem;
   color: white;
+  text-decoration: none;
 }
 
 .logo:hover{
   color: rgb(255, 238, 0);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .wanted h1{
@@ -220,7 +240,7 @@ margin: 0 auto;
 
 .machines h1{
   position: absolute;
-  bottom: 8%;
+  bottom: 12%;
   left: 5%;
   z-index: 3;
   color: white;
@@ -247,9 +267,9 @@ margin: 0 auto;
 .globe h1{
   position: absolute;
   font-family: 'Helvetica Neue','Cantarell', 'Fira Sans', 'Droid Sans';
-  font-weight: 100;
-  color: white;
-  font-size: calc(.5rem + 2vw);
+  font-weight: 300;
+  color: rgb(235, 208, 121);
+  font-size: calc(.5rem + 1.5vw);
   width: 100%;
   padding: 3%;
 }

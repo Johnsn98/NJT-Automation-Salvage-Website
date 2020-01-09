@@ -2,16 +2,22 @@ import React, { Component } from 'react'
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import'./App.css';
 
-import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
-import createTheme from '@material-ui/core/styles/createMuiTheme';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import createMuiTheme  from '@material-ui/core/styles/createMuiTheme';
 
 // Pages
-import home from './pages/home';
+import Home from './pages/home';
+import Sell from './pages/Sell-Components';
+import About from './pages/about';
+import eWaste from './pages/E-waste';
+
+
 
 //Components
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+
+
 
 const theme = createMuiTheme({
   palette: {
@@ -28,23 +34,25 @@ const theme = createMuiTheme({
 
 })
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-      <div className='App'>
-      <Navbar/>
-        <Router>
-          <Switch>
-          <Route exact path="/" component={home}/>
-
-          </Switch>
-         </Router>
-         <Footer/>
-      </div>
+      <div className="App">
+          <Router>
+          <Navbar />
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route  exact path="/sell" component={Sell}/>   
+              <Route  exact path="/about" component={About}/> 
+              <Route  exact path="/E-waste" component={eWaste}/>  
+            </Switch>          
+        <Footer/>
+        </Router>
+        </div>
       </MuiThemeProvider>
     );
   }
 }
 
-export default App
+export default App;
