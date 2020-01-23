@@ -52,20 +52,22 @@ class icons extends React.Component {
             
             <div>
             <Typography variant="h4" className={classes.title}>
+            <a href="tel:+1-303-499-7111">
             <Tooltip title="Call NJT">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="tel:+1-414-331-5954">
             <PhoneForwardedIcon className={classes.icons} />
             </IconButton>
             </Tooltip>
-  
+            </a>
+
             <Tooltip title="Send Text Message">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="sms:+1-414-331-5954">
             <MessageIcon className={classes.icons} />
             </IconButton>
             </Tooltip>
   
             <Tooltip title="Email NJT">
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="mailto:nathan@njtautomation.com?Subject=NJT%20INQUIRY">
             <EmailIcon  className={classes.icons} />
             </IconButton>
             </Tooltip>

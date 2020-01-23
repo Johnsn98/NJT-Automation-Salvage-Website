@@ -200,17 +200,24 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar className={classes.Toolbar} >
           <Typography variant="h4" className={classes.title}>
-          <Tooltip title="Back To Home" placement="bottom-start">
+          
           <div className='logo'>
+          <Tooltip title="Back To Home" placement="bottom-start">
           <Link to="/" className='logo'>
          NJT
           </Link>
+          </Tooltip>
+
+          <Tooltip title="Location">
+          <Link to="/location"  style={{ textDecoration: 'none' }}>
            <div className={classes.logoHeader}> Automation Salvage
             <div>Milwaukee, WI</div>   
            </div>
+           </Link>
+           </Tooltip>
            </div> 
 
-           </Tooltip>
+       
           </Typography>
 
 
@@ -223,19 +230,19 @@ export default function Navbar() {
           </Tooltip>
           
           <Tooltip title="Call NJT">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="tel:+1-414-331-5954">
           <PhoneForwardedIcon className={classes.icons} />
           </IconButton>
           </Tooltip>
 
           <Tooltip title="Send Text Message">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="sms:+1-414-331-5954">
           <MessageIcon className={classes.icons} />
           </IconButton>
           </Tooltip>
 
           <Tooltip title="Email NJT">
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="mailto:nathan@njtautomation.com?Subject=NJT%20INQUIRY">
           <EmailIcon  className={classes.icons} />
           </IconButton>
           </Tooltip>

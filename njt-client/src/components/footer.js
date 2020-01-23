@@ -1,18 +1,23 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import {
+  Link
+} from "react-router-dom";
 
 //MUI
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 
 // Mui Icons
-import faceIcon from '../images/Icons/faceiconwhte.png'
+import faceIcon from '../images/Icons/faceiconwhte.png';
+import Tooltip from '@material-ui/core/Tooltip';
 
 //icons
 import Icons from './icons'
 
 //CSS
 import'../App.css';
+
 
 
 
@@ -57,6 +62,10 @@ centered1: {
 
 footerImage:{
   height: 180,
+  "&:hover": {
+    cursor: 'pointer',
+    transform : 'scale(1.05)'
+  }
 },
 
 right: {
@@ -109,7 +118,13 @@ export default function Navbar() {
         <div className={classes.footer}>  
 
         <div className={classes.centered1}>  
+
+        <Link to="/contact">
+     
+        <Tooltip title="Contact Page">
           <img src={faceIcon} className={classes.footerImage}/>
+</Tooltip>
+</Link>
           </div>       
           <div className={classes.right}>  
           <Icons/>

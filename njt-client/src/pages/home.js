@@ -90,9 +90,11 @@ class home extends Component {
 
 
             <div className="body">
-            <div className="wanted">
+            <Link to="/contact"  style={{ textDecoration: 'none' }} >
+            <div className="wanted" component={Link} to="/contact">
             <h1>AUTOMATION COMPONENTS WANTED</h1>
             </div>
+            </Link>
             <Grid container spacing={16}
                 direction="row"
                 >
@@ -143,8 +145,11 @@ class home extends Component {
             <div className="machines">
             <h1>
             NJT
-            <div className="phone"> (414)331-5954</div>
+            <a href="sms:+1-414-331-5954">
+            <div className="phone" > (414)331-5954</div>
+            </a>
             </h1>
+            
             
             <img className="machines" src={machines}>
             </img>

@@ -55,13 +55,24 @@ const styles = (theme) => ({
         flexGrow: 1,
       },
       card: {
-        minWidth: 275
+        minWidth: 275,
+        margin: 25,
+        textDecoration: 'none',
+        "&:hover": {
+          opacity: '.99',
+          cursor: 'pointer',
+          borderStyle: 'solid',
+          borderWidth: '2px',
+          borderColor: 'grey'
+        }
       },
+
       title: {
         fontSize: 30,
         textAlign: 'center',
         color: 'white',
         backgroundColor: '#454545',
+        textDecoration: 'none',
       },
       paper: {
        fontSize: 'calc(.6rem + 2vw)',
@@ -69,6 +80,9 @@ const styles = (theme) => ({
        width: '20vw',
        color: '#282828',
        opacity: '.7',
+      },
+      pos: {
+        textDecoration: 'none',
       },
       control: {
         padding: theme.spacing(2),
@@ -126,7 +140,11 @@ logos: {
     padding: '2%',
     paddingLeft: '10%',
     paddingRight: '10%',
-    opacity: '.8'
+    opacity: '.8',
+    "&:hover": {
+      opacity: '.99',
+      cursor: 'pointer'
+    }
 }
 
 });
@@ -185,6 +203,7 @@ class Sell extends Component {
           </Grid>
 
             </div>
+            
             <div className="section">
             <div className="section1">
             <div className="firstchilds">
@@ -199,7 +218,7 @@ class Sell extends Component {
             justify="center"
             alignItems="center">
      
-            <Grid item sm={4} xs={12} button component={Link} to="/sell" style={{ textDecoration: 'none' }}>
+            <Grid item sm={4} xs={12} button component={Link} to="/contact" style={{ textDecoration: 'none' }}>
                 <div className="block1">
                 <img src={faceIcon}>
                 </img>
@@ -214,6 +233,8 @@ class Sell extends Component {
             </Grid>
             </div>
             </div>
+
+
             <img className="partsImage" src={parts}>
             </img>
 
@@ -221,11 +242,14 @@ class Sell extends Component {
             <section>
             <div className={classes.reUse}> Re-use Is The Most Efficient Form Of Recycling
             </div>
+            
+            <Link to="/contact"  style={{ textDecoration: 'none' }}>
             <div className="wanted1">
             <h1> IMMEDIATE PURCHASE CONSIDERATION:</h1>
             <div>
             </div>
             </div>
+            </Link>
             </section>
 
             <Grid container spacing={16}
@@ -267,67 +291,109 @@ class Sell extends Component {
             <Grid item sm={6} xs={12}>
             <Card className={classes.card}>
             <CardContent>
+            <a href='https://en.wikipedia.org/wiki/Automation' style={{ textDecoration: 'none' }}>
             <img className="partsImage" src={mitsubishiParts}>
             </img>
-              <Typography className={classes.title} color="textSecondary" gutterBottom>
+              <Typography className={classes.title} color="textSecondary" gutterBottom style={{ textDecoration: 'none' }}>
                 INDUSTRIAL ELECTRONICS
               </Typography>
-              <Typography className={classes.pos} color="textSecondary">
+              <Typography className={classes.pos} color="textSecondary" style={{ textDecoration: 'none' }}>
               Industrial electronics is a branch of electronics that deals with power electronic devices such as thyristors, SCRs, AC/DC drives, meters, sensors, analyzers, load sells automatic test equipment, multimeters, data recorders, relays, resistors, semiconductors, transistors, waveguides, scopes, amplifiers, radio frequency (RF) circuit boards, timers, counters, etc.
               </Typography>
-           
+           </a>
             </CardContent>
           </Card>
             </Grid>
             <Grid item sm={12} xs={12}>
+            <a href="https://ab.rockwellautomation.com/allenbradley/productdirectory.page?" style={{ textDecoration: 'none' }}>
             <img className={classes.logos} src={allenBradley}>
             </img>
-             
+            </a>
             </Grid>
+
             <Grid item sm={6} xs={12}>
+            <a href="https://new.abb.com/offerings">
             <img className={classes.logos} src={abb}>
             </img>
+            </a>
             </Grid>
+        
             <Grid item sm={6} xs={12}>
+            <a href="https://www.eaton.com/us/en-us/products/controls-drives-automation-sensors.html" style={{ textDecoration: 'none' }}>
             <img className={classes.logos} src={eaton}>
             </img>
+            </a>
             </Grid>
+           
+          
             <Grid item sm={6} xs={12}>
+              <a href="https://new.abb.com/about/history/heritage-brands/baldor-electric-company" style={{ textDecoration: 'none' }}>
             <img className={classes.logos} src={baldor}>
             </img>
+            </a>
             </Grid>
+          
+          
             <Grid item sm={6} xs={12}>
+            <a href="https://www.fanucamerica.com/industrial-solutions/manufacturing-applications" style={{ textDecoration: 'none' }}>
             <img className={classes.logos} src={fanuc}>
             </img>
+            </a>
             </Grid>
+           
+          
             <Grid item sm={6} xs={12}>
+              <a href="https://www.lenze.com/en-us/products/inverters/">
             <img className={classes.logos} src={lenze}>
             </img>
+            </a>
             </Grid>
+          
+           
             <Grid item sm={6} xs={12}>
+            <a href="https://us.mitsubishielectric.com/fa/en/">
             <img className={classes.logos} src={mitsubishi}>
             </img>
+            </a>
             </Grid>
+          
             <Grid item sm={6} xs={12}>
+            <a href="https://www.se.com/us/en/work/products/industrial-automation-control/">
             <img className={classes.logos} src={schneiderElectric}>
             </img>
+            </a>
+
             </Grid>
+
             <Grid item sm={6} xs={12}>
+            <a href="https://www.rockwellautomation.com/en_NA/products/overview.page">
             <img className={classes.logos} src={rockwell}>
             </img>
+            </a>
             </Grid>
+           
+
             <Grid item sm={6} xs={12}>
+            <a href="https://www.yaskawa.com/products/drives/industrial-ac-drives">
             <img className={classes.logos} src={yaskawa}>
             </img>
+            </a>
             </Grid>
+
             <Grid item sm={6} xs={12}>
+            <a href="https://www.omron.com/media/press/iab/">
             <img className={classes.logos} src={omron}>
             </img>
+            </a>
+
             </Grid>
+            
             </Grid>
             <Grid item sm={12} xs={12}>
+            <a href="https://new.siemens.com/global/en/products/automation.html" style={{ textDecoration: 'none' }}>
             <img className={classes.logos} src={siemens}>
             </img>
+            </a>
             </Grid>
             <Grid container className={classes.root} spacing={2}>
             <Grid item xs={12}>
@@ -338,6 +404,7 @@ class Sell extends Component {
             justify="center"
             alignItems="center" spacing={3}>
         <Grid item sm={6} xs={12}>
+        <a href='https://en.wikipedia.org/wiki/Programmable_logic_controller' style={{ textDecoration: 'none' }}>
               <Card className={classes.card}>
               <CardContent>
               <img className="partsImage" src={plc}>
@@ -349,6 +416,7 @@ class Sell extends Component {
                 A programmable logic controller (PLC) or programmable controller is an industrial digital computer which has been ruggedized and adapted for the control of manufacturing processes, such as assembly lines, or robotic devices, or any activity that requires high reliability control and ease of programming and process fault diagnosis.                </Typography>
               </CardContent>
             </Card>
+            </a>
             </Grid>
               </Grid>
 
@@ -357,7 +425,9 @@ class Sell extends Component {
               direction="row"
               justify="center"
               alignItems="center" spacing={3}>
+
           <Grid item sm={6} xs={12}>
+          <a href='https://en.wikipedia.org/wiki/Servo_control' style={{ textDecoration: 'none' }}>
                 <Card className={classes.card}>
                 <CardContent>
                 <img className="partsImage" src={servo}>
@@ -369,6 +439,7 @@ class Sell extends Component {
                   Servo control is achieved by sending a servo a PWM (pulse-width modulation) signal, a series of repeating pulses of variable width where either the width of the pulse or the duty cycle of a pulse train (less common today) determines the position to be achieved by the servo.</Typography>
                 </CardContent>
               </Card>
+              </a>
               </Grid>
                 </Grid>
 
@@ -378,6 +449,7 @@ class Sell extends Component {
                 justify="center"
                 alignItems="center" spacing={3}>
                   <Grid item sm={6} xs={12}>
+                  <a href='https://en.wikipedia.org/wiki/Variable-frequency_drive' style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
                   <img className="partsImage" src={powerFlex}>
@@ -385,10 +457,11 @@ class Sell extends Component {
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
                       AC Variable Frequency Drive
                     </Typography>
-                    <Typography className={classes.pos} color="textSecondary">
+                    <Typography className={classes.pos} color="textSecondary" > 
                     A variable-frequency drive (VFD) or adjustable-frequency drive (AFD), variable-voltage/variable-frequency (VVVF) drive, variable speed drive (VSD), AC drive, micro drive or inverter drive is a type of adjustable-speed drive used in electro-mechanical drive systems to control AC motor speed and torque by varying motor input frequency and voltage.                    </Typography>
                   </CardContent>
                 </Card>
+                </a>
                 </Grid>
                   </Grid>
 
@@ -398,6 +471,7 @@ class Sell extends Component {
                 justify="center"
                 alignItems="center" spacing={3}>
                   <Grid item sm={6} xs={12}>
+                  <a href="https://circuitglobe.com/dc-motor-drives.html" style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
                   <img className="partsImage" src={dcDrive}>
@@ -409,6 +483,7 @@ class Sell extends Component {
                     DC drives provide variable speed control for DC motors, ideal for applications requiring low speed control, torque and power. Speed adjustment is simple, typically using a potentiometer or analog input signal. IronHorse DC drives are available with either DC or AC input voltage input, and in open frame or NEMA 4/12 or 4X enclosed versions.                    </Typography>
                   </CardContent>
                 </Card>
+              </a>
                 </Grid>
                   </Grid>
 
@@ -419,6 +494,7 @@ class Sell extends Component {
                 justify="center"
                 alignItems="center" spacing={3}>
                 <Grid item sm={6} xs={12}>
+                <a href="https://ab.rockwellautomation.com/Graphic-Terminals" style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
                   <img className="partsImage" src={panelview}>
@@ -430,6 +506,7 @@ class Sell extends Component {
                     The HMI (Human Machine Interface) provides a textual or graphical view of system conditions and operations, vital information absent with simple pushbutton panels or switch banks. HMIs offer robust monitoring, control, status reporting and many other functions. Touch panels (including a headless version), message displays and text panels are available.                    </Typography>
                   </CardContent>
                 </Card>
+                </a>
                 </Grid>
                   </Grid>
 
@@ -439,6 +516,7 @@ class Sell extends Component {
                 justify="center"
                 alignItems="center" spacing={3}>
                 <Grid item sm={6} xs={12}>
+                <a href="https://en.wikipedia.org/wiki/Industrial_robot" style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
                   <img className="partsImage" src={robot}>
@@ -450,6 +528,7 @@ class Sell extends Component {
                     Robotic process automation (or RPA) is a form of business process automation technology based on metaphorical software robots (bots) or artificial intelligence (AI) workers.                    </Typography>
                   </CardContent>
                 </Card>
+                </a>
                 </Grid>
                   </Grid>
 
