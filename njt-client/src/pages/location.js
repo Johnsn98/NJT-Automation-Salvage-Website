@@ -137,7 +137,7 @@ export class location extends Component {
         return (
             <div>
             <div className={classes.header1}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2575180.955065438!2d-87.13096746863462!3d42.051377582574695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1cb639a25d061!2sNJT%20Automation!5e0!3m2!1sen!2sus!4v1579646585367!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>            </div>
+            <iframe  title="Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2575180.955065438!2d-87.13096746863462!3d42.051377582574695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1cb639a25d061!2sNJT%20Automation!5e0!3m2!1sen!2sus!4v1579646585367!5m2!1sen!2sus" width="100%" height="100%" frameBorder="0" allowFullScreen=""></iframe>            </div>
 
 
             <div className="section">
@@ -149,14 +149,14 @@ export class location extends Component {
              Locations
             </h1>  
             </div>
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             justify="center"
             alignItems="center">
      
-            <Grid item  sm={4} xs={12} button component={Link} to="/contact" style={{ textDecoration: 'none', zIndex: 3 }}>
+            <Grid item  sm={4} xs={12} component={Link} to="/contact" style={{ textDecoration: 'none', zIndex: 3 }}>
                 <div className="block1">
-                <img src={faceIcon}>
+                <img src={faceIcon} alt="Recycle Electronic E Waste Milwaukee">
                 </img>
                 <div className="text">
               Contact
@@ -194,7 +194,7 @@ export class location extends Component {
             </Grid>
             </Grid>
 
-            <iframe src="https://www.google.com/maps/d/embed?mid=1IyBfiVdNJZacAlnG2AGNeu4vNW9lEQV3" width="100%" height="580"></iframe>
+            <iframe title="Electronics Recycling Africa" src="https://www.google.com/maps/d/embed?mid=1IyBfiVdNJZacAlnG2AGNeu4vNW9lEQV3" width="100%" height="580"></iframe>
 
             <div className={classes.locations}>
             <h1>Equipment pickups available:</h1>
@@ -208,7 +208,7 @@ export class location extends Component {
             <div>Detroit, Michigan</div>
             <div>All midwest USA!</div>
             </div>
-<img src={map} className={classes.map}>
+<img src={map} className={classes.map} alt="Recycle Electronic E Waste Milwaukee">
 </img>
 
 <div className={classes.shipments}>

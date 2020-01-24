@@ -175,7 +175,6 @@ class eWaste extends Component {
             <Grid container className={classes.root} spacing={2}>
             <Grid item xs={12}>
               <Grid container   
-              justify="center"
               direction="row"
               justify="center"
               alignItems="center" spacing={3}>
@@ -184,7 +183,7 @@ class eWaste extends Component {
 
                   </Grid>
                   <Grid item>
-                  <img className={classes.img} src={recycle}/>
+                  <img className={classes.img} src={recycle} alt="Recycle Industrial Electronics"/>
                 </Grid>
                 <Grid item>
            
@@ -205,14 +204,14 @@ class eWaste extends Component {
              Recycling
             </h1>  
             </div>
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             justify="center"
             alignItems="center">
      
-            <Grid item  sm={4} xs={12} button component={Link} to="/contact" style={{ textDecoration: 'none', zIndex: 3 }}>
+            <Grid item  sm={4} xs={12} component={Link} to="/contact" style={{ textDecoration: 'none', zIndex: 3 }}>
                 <div className="block1">
-                <img src={faceIcon}>
+                <img src={faceIcon} alt="NJT Automation Equipment">
                 </img>
                 <div className="text">
               Contact
@@ -228,7 +227,7 @@ class eWaste extends Component {
 
             
             <div className="body">
-            <p></p>
+            <div className="divider"></div>
             <Grid container spacing={2}
             direction="row"
             justify="center"
@@ -240,9 +239,9 @@ class eWaste extends Component {
             INDUSTRIAL E-WASTE
           </Typography>
             <Typography className={classes.pos} color="textSecondary">
-            NJT industrial disposal service includes: the collection and recycling of non-working electronics, scrap circuit boards, manufacturing e-waste, electrical machinery and equipment.            </Typography>
-            <p> </p>
-            <img src={junkpile} className={classes.wasteImages}>
+            NJT industrial e-waste disposal service includes: the collection and recycling of non-working electronics, scrap circuit boards, manufacturing e-waste, electrical machinery, automation components and equipment to be recycled.             </Typography>
+            
+            <img src={junkpile} className={classes.wasteImages} alt="Automation Junk">
               </img>
             </CardContent>
             </Card>
@@ -255,10 +254,10 @@ class eWaste extends Component {
             OUT-DATED AUTOMATION
           </Typography>
             <Typography className={classes.pos} color="textSecondary">
-            Waste electronics, obsolete or broken electrical machinery, production scrap metals and plastics resulting from manufacturing, can easily be fully recycled 99% of the time.
-           <p> </p>
+            Waste electronics, obsolete or broken electrical machinery, production scrap metals and plastics resulting from manufacturing, can easily be fully recycled 99% of the time. Saving costs while reducing waste and harm to the environment.
+       
             </Typography>
-              <img src={junk} className={classes.wasteImages}>
+              <img src={junk} className={classes.wasteImages} alt="Sell Electronic E Waste">
               </img>
             </CardContent>
             </Card>
@@ -274,7 +273,7 @@ class eWaste extends Component {
            E-Waste is a world-wide issue and can be toxic to the environment if not handled properly. 
             NJT is partners with several environmentally-conscious recycling centers. Items will be removed and disposed-of to the proper establishment.
             </Typography>
-              <img src={crane} className={classes.wasteImages}>
+              <img src={crane} className={classes.wasteImages} alt="Sell Electronic E Waste">
               </img>
             </CardContent>
             </Card>
@@ -309,16 +308,16 @@ class eWaste extends Component {
             justify="center"
             alignItems="center">
             
-            <Grid item className={classes.videoContainer} button onClick={this.handleClick}>
+            <Grid item className={classes.videoContainer} onClick={this.handleClick}>
             <Tooltip title="Recycled Electronics In Africa">
             <h1 id="text">DON'T LET IT END UP HERE</h1></Tooltip>
-            <img className={classes.fire} id="image" src={fire}/>
+            <img className={classes.fire} id="image" src={fire} alt="Electronics waste in Africa"/>
             </Grid>
 
             
             <h1  id="videoText" style={{ display: 'none' }}>What happens to incorrectly recycled electronics:</h1>
             <div className={classes.container1} style={{ display: 'none' }} id="video">   
-            <iframe className={classes.video1}  src="https://www.youtube.com/embed/mleQVO1Vd1I?controls=0&amp;start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="Recycled Electronics In Africa" className={classes.video1}  src="https://www.youtube.com/embed/mleQVO1Vd1I?controls=0&amp;start=1" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           
             </div>
             </Grid>

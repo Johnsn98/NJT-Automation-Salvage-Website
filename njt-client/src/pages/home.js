@@ -32,7 +32,7 @@ class home extends Component {
             </div>
             <div className="section">
             <div className="section1">
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             justify="center"
             alignItems="center">
@@ -47,9 +47,9 @@ class home extends Component {
             </div>
 
             </Grid> 
-            <Grid item sm={3} xs={12} button component={Link} to="/sell" style={{ textDecoration: 'none' }}>
+            <Grid item sm={3} xs={12} component={Link} to="/sell" style={{ textDecoration: 'none' }}>
                 <div className="block">
-                <img src={handshake}>
+                <img src={handshake} alt="Sell Electronic E Waste">
                 </img>
                 <div>
                 Sell Surplus
@@ -58,9 +58,9 @@ class home extends Component {
                 </div>
                 </div>
             </Grid>
-            <Grid item sm={3} xs={12} button component={Link} to="/E-waste" style={{ textDecoration: 'none' }}>
+            <Grid item sm={3} xs={12} component={Link} to="/E-waste" style={{ textDecoration: 'none' }}>
                 <div className="block">
-                <img src={recycle}>
+                <img src={recycle} alt="Recycle Electronic E Waste Milwaukee">
                 </img>
                 <div>
                 E-Waste
@@ -71,9 +71,9 @@ class home extends Component {
                 </div>
             </div>
             </Grid>
-                <Grid item sm={3} xs={12} button component={Link} to="/sourcing" style={{ textDecoration: 'none' }}>
+                <Grid item sm={3} xs={12} component={Link} to="/sourcing" style={{ textDecoration: 'none' }}>
                  <div className="block">
-                 <img src={plcIcon}>
+                 <img src={plcIcon} alt="Recycle Electronic PLC  Milwaukee">
                  </img>
                  <div>
                 Rare
@@ -95,7 +95,7 @@ class home extends Component {
             <h1>AUTOMATION COMPONENTS WANTED</h1>
             </div>
             </Link>
-            <Grid container spacing={16}
+            <Grid container spacing={2}
                 direction="row"
                 >
                 <Grid item sm={6} xs={12}>
@@ -128,7 +128,7 @@ class home extends Component {
             </Grid>
             <Grid item sm={12} xs={12}
             >
-            <img className="partsImage" src={parts}>
+            <img className="partsImage" src={parts} alt="Automation Parts">
             </img>
             </Grid>
             </Grid>
@@ -139,7 +139,7 @@ class home extends Component {
             Saving old machines
             <div>saves jobs</div>
             and our planet</h1>
-            <img src={worker}>
+            <img src={worker} alt="Manufacturing Factory Worker">
             </img>
             </div>
             <div className="machines">
@@ -151,7 +151,7 @@ class home extends Component {
             </h1>
             
             
-            <img className="machines" src={machines}>
+            <img className="machines" src={machines} alt="Manufacturing Machines">
             </img>
             </div>
             <div className="globe">
@@ -173,7 +173,7 @@ class home extends Component {
             stay operational.
             </div>
             </h1>
-            <img src={globe}>
+            <img src={globe} alt="Global E commerce in manufacturing">
             </img>
             </div>
             </div>

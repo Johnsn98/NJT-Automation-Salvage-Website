@@ -37,7 +37,7 @@ class about extends Component {
              </div>
             <div className="section">
             <div className="section1">
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             justify="center"
             alignItems="center">
@@ -52,9 +52,9 @@ class about extends Component {
             </div>
 
             </Grid> 
-            <Grid item sm={3} xs={12} button component={Link} to="/sell" style={{ textDecoration: 'none' }}>
+            <Grid item sm={3} xs={12} component={Link} to="/sell" style={{ textDecoration: 'none' }}>
                 <div className="block">
-                <img src={handshake}>
+                <img src={handshake} alt="Sell Automation Equipment">
                 </img>
                 <div>
                 Sell Surplus
@@ -63,9 +63,9 @@ class about extends Component {
                 </div>
                 </div>
             </Grid>
-            <Grid item sm={3} xs={12} button component={Link} to="/E-waste" style={{ textDecoration: 'none' }}>
+            <Grid item sm={3} xs={12} component={Link} to="/E-waste" style={{ textDecoration: 'none' }}>
                 <div className="block">
-                <img src={recycle}>
+                <img src={recycle} alt="Recycle Automation Equipment">
                 </img>
                 <div>
                 E-Waste
@@ -76,9 +76,9 @@ class about extends Component {
                 </div>
             </div>
             </Grid>
-                <Grid item sm={3} xs={12} button component={Link} to="/sourcing" style={{ textDecoration: 'none' }}>
+                <Grid item sm={3} xs={12} component={Link} to="/sourcing" style={{ textDecoration: 'none' }}>
                  <div className="block">
-                 <img src={plcIcon}>
+                 <img src={plcIcon} alt="Sell PLC Milwaukee">
                  </img>
                  <div>
                 Rare
@@ -104,17 +104,21 @@ class about extends Component {
 
             <p>
 NJT’s business model is to find old parts from scrapped machines, surplus/spare parts, or parts from failed machine installations and sell them to the factories who need them. 
+</p>
+
 
 <p>Re-using a part from a junked machine could be the only way to keep another plant going.
 
 When a new-machine installation is failed or altered, parts are ordered and then plans change. 
 Sometimes the vender will take them back but in many cases, someone gets stuck with a bunch of un-needed parts. Those parts have no value to that company. 
-
 </p>
+
+<p>
 Factory machines are running almost 24/7 and it is a difficult task keeping them operational when new, let alone after 20+ years. Factories with old machines are operating all over the USA and this is especially true in the Midwest.
 
 Back in the 1990s, manually operated machines were replaced with automated ones, operations done with mechanical mechanisms or by relay circuits were replaced by PLCs and other electronic controllers. The electronics sped up the manufacturing process and reduced the number of workers but after about 15 years, those electronic components are not being supported by the original manufacturer. If one breaks, you can’t just order up a new one. So that leaves the factory with two options: replacing all the components with updated versions at huge expense or finding the part somehow. The latter is risky but costs a small fraction of the former. So, what do factories do? They go online and find the part they need from a third-party vendor. The parts are either new-old-stock or used and that is where NJT comes in.
             </p>
+            
             <div className="divider"></div>
             <h1>FAQ</h1>
             <div className="divider"></div>

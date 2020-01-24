@@ -122,7 +122,7 @@ export default function Navbar() {
         <Link to="/contact">
      
         <Tooltip title="Contact Page">
-          <img src={faceIcon} className={classes.footerImage}/>
+          <img src={faceIcon} className={classes.footerImage} alt="NJT"/>
 </Tooltip>
 </Link>
           </div>       

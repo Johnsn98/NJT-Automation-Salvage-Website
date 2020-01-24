@@ -172,7 +172,7 @@ class Sell extends Component {
             <Grid container className={classes.root} spacing={2}>
             <Grid item xs={12}>
               <Grid container   
-              justify="center"
+             
               direction="row"
               justify="center"
               alignItems="center" spacing={3}>
@@ -188,7 +188,7 @@ class Sell extends Component {
                     </div>
                   </Grid>
                   <Grid item>
-                  <img className={classes.img} src={handshake}/>
+                  <img className={classes.img} src={handshake} alt="Recycle Electronic E Waste Milwaukee"/>
                 </Grid>
                 <Grid item>
                 <div className={classes.paper}>
@@ -213,14 +213,14 @@ class Sell extends Component {
              Components
             </h1>  
             </div>
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             justify="center"
             alignItems="center">
      
-            <Grid item sm={4} xs={12} button component={Link} to="/contact" style={{ textDecoration: 'none' }}>
+            <Grid item sm={4} xs={12} component={Link} to="/contact" style={{ textDecoration: 'none' }}>
                 <div className="block1">
-                <img src={faceIcon}>
+                <img src={faceIcon} alt="Recycle Electronic E Waste Milwaukee">
                 </img>
                 <div className="text">
               Contact
@@ -235,7 +235,7 @@ class Sell extends Component {
             </div>
 
 
-            <img className="partsImage" src={parts}>
+            <img className="partsImage" src={parts} alt="Automation Parts + E waste">
             </img>
 
             <div className="body">
@@ -252,7 +252,7 @@ class Sell extends Component {
             </Link>
             </section>
 
-            <Grid container spacing={16}
+            <Grid container spacing={2}
                 direction="row"
                 >
                 <Grid item sm={6} xs={12}>
@@ -292,7 +292,7 @@ class Sell extends Component {
             <Card className={classes.card}>
             <CardContent>
             <a href='https://en.wikipedia.org/wiki/Automation' style={{ textDecoration: 'none' }}>
-            <img className="partsImage" src={mitsubishiParts}>
+            <img className="partsImage" src={mitsubishiParts} alt="Mitsubishi Automation">
             </img>
               <Typography className={classes.title} color="textSecondary" gutterBottom style={{ textDecoration: 'none' }}>
                 INDUSTRIAL ELECTRONICS
@@ -306,21 +306,21 @@ class Sell extends Component {
             </Grid>
             <Grid item sm={12} xs={12}>
             <a href="https://ab.rockwellautomation.com/allenbradley/productdirectory.page?" style={{ textDecoration: 'none' }}>
-            <img className={classes.logos} src={allenBradley}>
+            <img className={classes.logos} src={allenBradley} alt="Allen Bradley Automation Surplus">
             </img>
             </a>
             </Grid>
 
             <Grid item sm={6} xs={12}>
             <a href="https://new.abb.com/offerings">
-            <img className={classes.logos} src={abb}>
+            <img className={classes.logos} src={abb} alt="Recycle Electronic E Waste ABB">
             </img>
             </a>
             </Grid>
         
             <Grid item sm={6} xs={12}>
             <a href="https://www.eaton.com/us/en-us/products/controls-drives-automation-sensors.html" style={{ textDecoration: 'none' }}>
-            <img className={classes.logos} src={eaton}>
+            <img className={classes.logos} src={eaton} alt="Easton Automation Logo">
             </img>
             </a>
             </Grid>
@@ -328,7 +328,7 @@ class Sell extends Component {
           
             <Grid item sm={6} xs={12}>
               <a href="https://new.abb.com/about/history/heritage-brands/baldor-electric-company" style={{ textDecoration: 'none' }}>
-            <img className={classes.logos} src={baldor}>
+            <img className={classes.logos} src={baldor} alt="Baldor Automation Logo">
             </img>
             </a>
             </Grid>
@@ -336,7 +336,7 @@ class Sell extends Component {
           
             <Grid item sm={6} xs={12}>
             <a href="https://www.fanucamerica.com/industrial-solutions/manufacturing-applications" style={{ textDecoration: 'none' }}>
-            <img className={classes.logos} src={fanuc}>
+            <img className={classes.logos} src={fanuc} alt="GE FANUC Automation Logo">
             </img>
             </a>
             </Grid>
@@ -344,7 +344,7 @@ class Sell extends Component {
           
             <Grid item sm={6} xs={12}>
               <a href="https://www.lenze.com/en-us/products/inverters/">
-            <img className={classes.logos} src={lenze}>
+            <img className={classes.logos} src={lenze}  alt="Lenze Automation Logo">
             </img>
             </a>
             </Grid>
@@ -352,14 +352,14 @@ class Sell extends Component {
            
             <Grid item sm={6} xs={12}>
             <a href="https://us.mitsubishielectric.com/fa/en/">
-            <img className={classes.logos} src={mitsubishi}>
+            <img className={classes.logos} src={mitsubishi} alt="Mitsubishi Automation Logo">
             </img>
             </a>
             </Grid>
           
             <Grid item sm={6} xs={12}>
             <a href="https://www.se.com/us/en/work/products/industrial-automation-control/">
-            <img className={classes.logos} src={schneiderElectric}>
+            <img className={classes.logos} src={schneiderElectric} alt="Automation Logo">
             </img>
             </a>
 
@@ -367,7 +367,7 @@ class Sell extends Component {
 
             <Grid item sm={6} xs={12}>
             <a href="https://www.rockwellautomation.com/en_NA/products/overview.page">
-            <img className={classes.logos} src={rockwell}>
+            <img className={classes.logos} src={rockwell} alt="Rockwell Automation Logo">
             </img>
             </a>
             </Grid>
@@ -375,14 +375,14 @@ class Sell extends Component {
 
             <Grid item sm={6} xs={12}>
             <a href="https://www.yaskawa.com/products/drives/industrial-ac-drives">
-            <img className={classes.logos} src={yaskawa}>
+            <img className={classes.logos} src={yaskawa} alt="yaskawa Automation Logo">
             </img>
             </a>
             </Grid>
 
             <Grid item sm={6} xs={12}>
             <a href="https://www.omron.com/media/press/iab/">
-            <img className={classes.logos} src={omron}>
+            <img className={classes.logos} src={omron} alt="Omron Automation Logo">
             </img>
             </a>
 
@@ -391,7 +391,7 @@ class Sell extends Component {
             </Grid>
             <Grid item sm={12} xs={12}>
             <a href="https://new.siemens.com/global/en/products/automation.html" style={{ textDecoration: 'none' }}>
-            <img className={classes.logos} src={siemens}>
+            <img className={classes.logos} src={siemens} alt="Siemens Automation Logo">
             </img>
             </a>
             </Grid>
@@ -401,13 +401,13 @@ class Sell extends Component {
         <Grid container   
             justify="center"
             direction="row"
-            justify="center"
+          
             alignItems="center" spacing={3}>
         <Grid item sm={6} xs={12}>
         <a href='https://en.wikipedia.org/wiki/Programmable_logic_controller' style={{ textDecoration: 'none' }}>
               <Card className={classes.card}>
               <CardContent>
-              <img className="partsImage" src={plc}>
+              <img className="partsImage" src={plc} alt="PLC Parts Sell">
               </img>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
                   PLC
@@ -423,14 +423,14 @@ class Sell extends Component {
               <Grid container   
               justify="center"
               direction="row"
-              justify="center"
+             
               alignItems="center" spacing={3}>
 
           <Grid item sm={6} xs={12}>
           <a href='https://en.wikipedia.org/wiki/Servo_control' style={{ textDecoration: 'none' }}>
                 <Card className={classes.card}>
                 <CardContent>
-                <img className="partsImage" src={servo}>
+                <img className="partsImage" src={servo} alt="Servo Controller">
                 </img>
                   <Typography className={classes.title} color="textSecondary" gutterBottom>
                     Servo Drive / Controller
@@ -446,13 +446,13 @@ class Sell extends Component {
                 <Grid container   
                 justify="center"
                 direction="row"
-                justify="center"
+      
                 alignItems="center" spacing={3}>
                   <Grid item sm={6} xs={12}>
                   <a href='https://en.wikipedia.org/wiki/Variable-frequency_drive' style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
-                  <img className="partsImage" src={powerFlex}>
+                  <img className="partsImage" src={powerFlex} alt="Powerflex Drive Allen Bradley">
                   </img>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
                       AC Variable Frequency Drive
@@ -468,13 +468,13 @@ class Sell extends Component {
                   <Grid container   
                 justify="center"
                 direction="row"
-                justify="center"
+           
                 alignItems="center" spacing={3}>
                   <Grid item sm={6} xs={12}>
                   <a href="https://circuitglobe.com/dc-motor-drives.html" style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
-                  <img className="partsImage" src={dcDrive}>
+                  <img className="partsImage" src={dcDrive} alt="DC Electric Motor Drive">
                   </img>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
                       DC Electric Motor Drive
@@ -491,13 +491,13 @@ class Sell extends Component {
                   <Grid container   
                 justify="center"
                 direction="row"
-                justify="center"
+       
                 alignItems="center" spacing={3}>
                 <Grid item sm={6} xs={12}>
                 <a href="https://ab.rockwellautomation.com/Graphic-Terminals" style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
-                  <img className="partsImage" src={panelview}>
+                  <img className="partsImage" src={panelview} alt="Panelview Screen">
                   </img>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
                       HMI and PANELVIEW SCREENS
@@ -513,13 +513,13 @@ class Sell extends Component {
                   <Grid container   
                 justify="center"
                 direction="row"
-                justify="center"
+  
                 alignItems="center" spacing={3}>
                 <Grid item sm={6} xs={12}>
                 <a href="https://en.wikipedia.org/wiki/Industrial_robot" style={{ textDecoration: 'none' }}>
                   <Card className={classes.card}>
                   <CardContent>
-                  <img className="partsImage" src={robot}>
+                  <img className="partsImage" src={robot} alt="Robot">
                   </img>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
                       ROBOTS + REPLACEMENT PARTS

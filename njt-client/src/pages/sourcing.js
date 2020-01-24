@@ -145,7 +145,7 @@ export class sourcing extends Component {
             <div className={classes.headerText}>
             <div>
          
-            <img src={plcIcon} className={classes.plcIcon}>
+            <img src={plcIcon} className={classes.plcIcon}  alt="Automation NJT">
             </img>
             </div>
             ANY PART FOR A PRICE 
@@ -160,14 +160,14 @@ export class sourcing extends Component {
              Sourcing
             </h1>  
             </div>
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             justify="center"
             alignItems="center">
      
-            <Grid item  sm={4} xs={12} button component={Link} to="/" style={{ textDecoration: 'none', zIndex: 3 }}>
+            <Grid item  sm={4} xs={12} component={Link} to="/contact" style={{ textDecoration: 'none', zIndex: 3 }}>
                 <div className="block1">
-                <img src={faceIcon}>
+                <img src={faceIcon} alt="Automation NJT">
                 </img>
                 <div className="text">
               Contact
@@ -188,33 +188,33 @@ export class sourcing extends Component {
             </Link>
             </div>
 
-            <Grid container spacing={16}
+            <Grid container spacing={2}
             direction="row"
             >
             <Grid item sm={4} xs={6}>
-            <img src={circuit} className={classes.partsImages}>
+            <img src={circuit} className={classes.partsImages} alt="Automation parts">
                 </img>
             </Grid>
             <Grid item sm={4} xs={6}>
-            <img src={contactor} className={classes.partsImages}>
+            <img src={contactor} className={classes.partsImages} alt="Automation Parts">
                 </img>
             </Grid>
             <Grid item sm={4} xs={6}>
-            <img src={drive} className={classes.partsImages}>
-                </img>
-            </Grid>
-
-            <Grid item sm={4} xs={6}>
-            <img src={kuka} className={classes.partsImages}>
+            <img src={drive} className={classes.partsImages} alt="Automation parts">
                 </img>
             </Grid>
 
             <Grid item sm={4} xs={6}>
-            <img src={panelview} className={classes.partsImages}>
+            <img src={kuka} className={classes.partsImages} alt="Automation robotics">
+                </img>
+            </Grid>
+
+            <Grid item sm={4} xs={6}>
+            <img src={panelview} className={classes.partsImages} alt="Automation screen">
                 </img>
             </Grid>
             <Grid item sm={4}>
-            <img src={servomechanism} className={classes.partsImages}>
+            <img src={servomechanism} className={classes.partsImages} alt="Automation Servo Controller">
                 </img>
             </Grid>
             </Grid>
@@ -229,13 +229,12 @@ export class sourcing extends Component {
             <Grid container
             justify="center"
             direction="row"
-            justify="center"
             alignItems="center" spacing={3}>
             <div>
             </div>
 
-            <Grid item sm={16} >
-            <img src={autofactory} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={autofactory} className={classes.partsImages} alt="Automotive Factory">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
@@ -244,8 +243,8 @@ export class sourcing extends Component {
                 </div>
             </Grid>
 
-            <Grid item sm={16} >
-            <img src={bottlefactory} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={bottlefactory} className={classes.partsImages} alt="Bottle Factory">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
@@ -254,8 +253,8 @@ export class sourcing extends Component {
                 </div>
             </Grid>
 
-            <Grid item sm={16} >
-            <img src={wirefactory} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={wirefactory} className={classes.partsImages} alt="Wire Factory">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
@@ -263,8 +262,8 @@ export class sourcing extends Component {
                 </div>
             </Grid>
 
-            <Grid item sm={16} >
-            <img src={machine} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={machine} className={classes.partsImages} alt="Machinery Factory">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
@@ -272,8 +271,8 @@ export class sourcing extends Component {
                 </div>
             </Grid>
 
-            <Grid item sm={16} >
-            <img src={steelfactory} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={steelfactory} className={classes.partsImages} alt="Steel Factory">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
@@ -281,8 +280,8 @@ export class sourcing extends Component {
                 </div>
             </Grid>
 
-            <Grid item sm={16} >
-            <img src={factory} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={factory} className={classes.partsImages} alt="Factory">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
@@ -290,8 +289,8 @@ export class sourcing extends Component {
                 </div>
             </Grid>
 
-            <Grid item sm={16} >
-            <img src={rollercoaster} className={classes.partsImages}>
+            <Grid item sm={12} >
+            <img src={rollercoaster} className={classes.partsImages} alt="Parts">
                 </img>
                 <div className={classes.infoContainer}>
                 <div className={classes.info}>
