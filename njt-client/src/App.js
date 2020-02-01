@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+//css
 import'./App.css';
 
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
@@ -19,6 +21,7 @@ import about from './pages/about';
 //Components
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
+import Helmet from 'react-helmet';
 
 //Functions
 import ScrollToTop from 'react-router-scroll-top'
@@ -38,15 +41,19 @@ const theme = createMuiTheme({
 
 })
 
-
-
 class App extends Component {
   render() {
      return (
+      <div className="appRoot">
       <MuiThemeProvider theme={theme}>
-      <div className="App">
           <Router>
-          <Navbar/>
+          <Helmet>
+          <meta name='viewport' content="width=device-width, initial-scale=1"></meta>
+        <meta NAME="geo.position" CONTENT="43.0389; 87.9065"></meta>
+          <meta NAME="geo.placename" CONTENT="Milwaukee"></meta> 
+          </Helmet>
+          <div className="App">
+          <Navbar className="navBar"/>
           <ScrollToTop>
             <Switch>
               <Route exact path="/" component={Home}/>
@@ -57,12 +64,15 @@ class App extends Component {
               <Route  exact path="/contact" component={contact}/>
               <Route  exact path="/location" component={location}/>
               <Route  exact path="/about" component={about}/>
+              <Route  exact path="/news" component={about}/>
+              <Route  path={["/home", "/users", "*"]} component={Home}/>
             </Switch>   
             </ScrollToTop>       
         <Footer/>
-        </Router>
         </div>
-      </MuiThemeProvider>
+        </Router>
+      </MuiThemeProvider> 
+    </div>
     );
   }
 }

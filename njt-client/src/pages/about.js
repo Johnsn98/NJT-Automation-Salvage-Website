@@ -9,7 +9,8 @@ import handshake from '../images/Icons/handshake.jpg'
 import recycle from '../images/Icons/recycleicon.jpg'
 import plcIcon from '../images/Icons/plcIcon.jpg'
 
-//Images
+//componenets
+import Helmet from 'react-helmet'
 
 
 //CSS
@@ -19,8 +20,21 @@ class about extends Component {
     render() {
 
         return (
-          
+       
             <div>
+            <Helmet>
+            <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/njt-website.appspot.com/o/NJT.png?alt=media&token=ff4ac228-1bca-4f36-a8a5-9418d4efa9f2"/>
+            <meta id="og-image" property="og:image:secure_url" content="https://firebasestorage.googleapis.com/v0/b/njt-website.appspot.com/o/NJT.png?alt=media&token=ff4ac228-1bca-4f36-a8a5-9418d4efa9f2"/>
+            <link rel="icon" href="/images/small.png"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
+            <meta name="theme-color" content="#000000"/>
+            <meta name="description" content="About: NJT Automation Salvage"/>
+            <link rel="apple-touch-icon" href="/images/icon.png"/><link rel="manifest" href="/manifest.json"/>
+            <title>NJT Automation Salvage</title>
+            <meta name='viewport' content="width=device-width, initial-scale=1"></meta>
+          <meta NAME="geo.position" CONTENT="43.0389; 87.9065"></meta>
+            <meta NAME="geo.placename" CONTENT="Milwaukee"></meta> 
+            </Helmet>
             <div className="header1">
        
 
@@ -98,32 +112,22 @@ class about extends Component {
             <div className="body1">
             <h1>ABOUT</h1>
             <p>
-            NJT was founded in August 2019 by Nathan Johnson (myself). 
-            I saw the market for outdated industrial-electronics after working as a technician in a manufacturing plant. 
+            NJT’s business model is to source parts from scrapped machines, surplus inventory, or parts from failed machine installations and resell them to operating factories.
             </p>
-
             <p>
-NJT’s business model is to find old parts from scrapped machines, surplus/spare parts, or parts from failed machine installations and sell them to the factories who need them. 
-</p>
-
-
-<p>Re-using a part from a junked machine could be the only way to keep another plant going.
-
-When a new-machine installation is failed or altered, parts are ordered and then plans change. 
-Sometimes the vender will take them back but in many cases, someone gets stuck with a bunch of un-needed parts. Those parts have no value to that company. 
-</p>
-
-<p>
-Factory machines are running almost 24/7 and it is a difficult task keeping them operational when new, let alone after 20+ years. Factories with old machines are operating all over the USA and this is especially true in the Midwest.
-
-Back in the 1990s, manually operated machines were replaced with automated ones, operations done with mechanical mechanisms or by relay circuits were replaced by PLCs and other electronic controllers. The electronics sped up the manufacturing process and reduced the number of workers but after about 15 years, those electronic components are not being supported by the original manufacturer. If one breaks, you can’t just order up a new one. So that leaves the factory with two options: replacing all the components with updated versions at huge expense or finding the part somehow. The latter is risky but costs a small fraction of the former. So, what do factories do? They go online and find the part they need from a third-party vendor. The parts are either new-old-stock or used and that is where NJT comes in.
+            In many situations, utilizing a used or surplus part as a replacement could be the only course of action able to keep a machine running. This is due to the original manufacturers ceasing production of replacement parts after approximately 15 years. This situation happens often in the USA and other developed/industrialized countries but it is even far more common in developing countries where machines are kept running for longer with a lower budget. Machinery that is considered to be past its useful lifespan in one country, is often sold to another and used for years. NJT seeks to find those parts that keep the old machines running all over the world
             </p>
-            
+            <p>
+            For example, a machine is upgraded in a factory in Green Bay, Wisconsin. The old electronics are removed and replaced with new versions. The company also has an inventory of replacement parts which were never used. Those old electronics and surplus parts are of no value now that the machine is updated and have to be recycled at a monetary expense or be disposed of to a landfill at an environmental expense in both situations. NJT offers an alternative where the parts can be sold and reused. This benefits the original factory and will likely save a factory is Mexico that can’t fix it’s machines without those parts. 
+
+            </p>        
+    
             <div className="divider"></div>
             <h1>FAQ</h1>
-            <div className="divider"></div>
+    
             <p>Q: Where is NJT Automation located?</p>
-            <p>A: NJT is based out of Milwaukee, Wisconsin and services the surround areas. Items nearby will be picked up at your location. If you are not near Milwaukee or Chicago, NJT will still buy your items and have them shipped via Fedex.</p>
+            <p>A: NJT is based out of Milwaukee, Wisconsin and services the surrounding areas. Items nearby will be picked up at your location. If you are not near Milwaukee or Chicago, NJT will still buy your items and have them shipped via Fedex or a similar shipping service.
+            </p>
             <div className="divider"></div>
             <p>Q: How are the items picked up?</p>
             <p>A: After payment is received, NJT will come to your location and remove the items or arrange a shipping company to do so.</p>
@@ -132,32 +136,15 @@ Back in the 1990s, manually operated machines were replaced with automated ones,
             <p>A: Items are purchased with cash or check. Paypal payment is also available.</p>
             <div className="divider"></div>
             <p>Q: What does NJT Automation do with the items?</p>
-            <p>A: They are re-purposed and resold to other companies. Items that are in damaged condition will be repaired if possible or recycled for scrap materials. NJT will do minor-repairs in house and outsource larger repairs to specialized companies or sell those damaged parts to a refurbishing center.</p>
+            <p>A: They are re-purposed and resold to other companies. Items that are in damaged condition will be repaired if possible or recycled for scrap materials. NJT will do minor repairs in house and outsource larger repairs to specialized companies or sell those damaged parts to a refurbishing center.</p>
             <div className="divider"></div>
             <p>Q: Where do you normally get your parts?</p>
             <p>A: Spare and surplus parts are not uncommon. Machines are constantly being upgraded and replaced. The best parts are new-in-box. Every factory has a spare-parts inventory. The parts are only used as back-ups. Eventually a machine is replaced with a newer unit and the company is left with the old parts that cannot be used on the new machine.</p>
             <div className="divider"></div>
             <p></p>
-            <h1>Industrial Automation Recycling and Salvage</h1>
-            <p>Outdated and unwanted parts are most often thrown away to end up in landfills. When disposed of, these parts are hazardous to the environment. There are 5 common recycling options for industrial waste, breaking the waste down, reclaiming the waste, burn it to make it, hot treatment and harnessing the harmful gas. Besides the mentioned options, a much better solution is to repurpose and reuse.
-            </p>
-            <p>To reclaim the e-waste, used machine parts are processed and useful material is extracted from it, for example mercury, gold, silver, or copper can be recovered from electronics waste.</p>
-            <p>Some materials can be re-melted to form new objects. For example, plastics can be converted into clothing-grade polyester. Most waste materials contain energy content to some degree. This energy can be used for cooking, heating and generating steam, by heating the waste at high temperatures with limited oxygen availability. Using this type of thermal treatment, the energy content can be processed into alternative fuels too.</p>
-            <p>Recycling promotes the avoidance of landfills altogether, but since dumping waste in an abandoned area is so inexpensive, landfills are still quite common. Thus, as part of resource recovery, the harmful landfill gas is captured and harnessed to generate fuel or electricity.</p>
-            <p>The U.S. government has relied on local and state governments to oversee recycling and waste management laws. State and local government regulations fall into two major categories: recycling goals and landfill bans.</p>
-            <p>Landfill bans make disposing enumerated materials such as oil, yard waste and other easily collectible materials illegal. Currently, North Carolina, Michigan, Minnesota, and Wisconsin have landfill bans.</p>
-            <p>Other states such as California and Illinois focus on recycling goals. Some states simply encourage recycling of certain materials such as plastic bottles by passing a bill. To date, 25 states have passed laws making state-wide electronic waste recycling mandatory. These 25 states cover 65 percent of the population of the USA. Back in 2003, California was the first to enact the first e-waste recycling law and in 2011, Utah was last in this list.
-            </p>
-            <p>Although there are no specific national recycling laws in the USA. the U.S. Environmental Protection Agency (EPA) regulates waste management and recycling under the Resource Conservation and Recovery Act (RCRA). The key goals of RCRA are: protect Americans from toxic and hazardous waste disposal, preserve natural resources and energy by recovering, reusing and recycling.</p>
-            <p>Many factories in the USA and countries around the world have aging machinery that needs to stay operational but replacement parts are no longer being manufactured. NJT’s business is to purchase your old parts and resell them to be used again, helping you liquidate excess inventory, reduce storage costs, and optimize space. By taking, but not re-processing the used industrial machines, NJT helps to save time, money, energy and resources. Your used and unwanted items can be valuable for somebody else.
-            </p>
-            <p>NJT allows you to sell components quickly and efficiently. To inquire about our purchasing services, please contact us today. 
-            </p>
-            <h1>SELL AUTOMATION EQUIPMENT</h1>
-            <p> Sell your new or used surplus to NJT</p>
-            <p>NJT Automation Equipment is actively seeking automation and manufacturing equipment for immediate purchase consideration.</p>
-            <p>If you have any of these as surplus or idle equipment at your facility or business, we would be like to get more details to evaluate them for purchase. Feel free to send us your list of surplus assets.</p>
-            <p>NJT is your source to liquidate excess inventory, reduce storage costs, eliminate aging items and optimize space by selling your unwanted and old parts</p>
+       
+
+
 
             <div className="divider">
             <h2>

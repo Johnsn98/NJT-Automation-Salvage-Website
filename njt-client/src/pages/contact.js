@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import {Link} from "react-router-dom";
 
 // css
-import '../pages.css';
+import '../App.css';
 
 // images
 import machines from '../images/machines.jpg';
@@ -282,7 +282,7 @@ export class contact extends Component {
             <Tooltip title="Facebook Page">
             <Grid item sm={10} xs={8}>
             <div className={classes.contactText}>
-            <a href='https://www.google.com/maps/place/NJT+Automation/@43.0571523,-87.9168635,17z/data=!3m1!4b1!4m5!3m4!1s0x8805195c7f83be51:0xe1cb639a25d061!8m2!3d43.0571523!4d-87.9146695'>
+            <a href='https://www.facebook.com/njtautomation'>
           <div className={classes.url}> Facebook.com/njtautomation
           </div>
           </a>

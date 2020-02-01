@@ -6,7 +6,7 @@ import {
   } from "react-router-dom";
 
 // css
-import '../pages.css';
+import '../App.css';
 
 // images
 import Background from '../images/background1.jpg';
@@ -235,7 +235,7 @@ class Sell extends Component {
             </div>
 
 
-            <img className="partsImage" src={parts} alt="Automation Parts + E waste">
+            <img className="partsImage1" src={parts} alt="Automation Parts + E waste">
             </img>
 
             <div className="body">

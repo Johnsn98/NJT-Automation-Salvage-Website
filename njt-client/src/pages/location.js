@@ -6,7 +6,7 @@ import {
   } from "react-router-dom";
 
 // css
-import '../pages.css';
+import '../App.css';
 
 // images
 import map from '../images/map.png'

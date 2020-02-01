@@ -15,7 +15,7 @@ import worker from '../images/worker.jpg'
 import machines from '../images/machines.jpg'
 import globe from '../images/globe.jpg'
 
-
+import Helmet from 'react-helmet'
 
 //CSS
 import'../App.css';
@@ -24,11 +24,24 @@ class home extends Component {
     render() {
 
         return (
-          
+            
             <div>
+            <Helmet>
+            <meta property="og:image" content="https://njtautomation.com/static/media/parts.84e59de7.jpg"/>
+            <meta id="og-image" property="og:image:secure_url" content="https://njtautomation.com/static/media/parts.84e59de7.jpg"/>
+            <link rel="icon" href="/njt-client/public/NJT.png"/>
+            <meta name="viewport" content="width=device-width,initial-scale=1"/>
+            <meta name="theme-color" content="#000000"/>
+            <meta name="description" content="Sell Surplus and Used Automation Equipment - Milwaukee, WI"/>
+            <link rel="apple-touch-icon" href="/njt-client/src/images/parts.jpg"/><link rel="manifest" href="/manifest.json"/>
+            <title>NJT Automation Salvage</title>
+            <meta name='viewport' content="width=device-width, initial-scale=1"></meta>
+          <meta NAME="geo.position" CONTENT="43.0389; 87.9065"></meta>
+            <meta NAME="geo.placename" CONTENT="Milwaukee"></meta> 
+            </Helmet>
             <div className="header">
             <h1> Keeping The Machines Alive </h1>
-            <h2> One part can hinge an entire operation </h2>
+            <h2> An entire operation can hinge on one part </h2>
             </div>
             <div className="section">
             <div className="section1">
@@ -158,10 +171,10 @@ class home extends Component {
             <h1>
             Every corner of the globe
             <div>
-            has automated machinery.
+            has automated machinery,
             </div>
             <div>
-            Commonly 20+ years old.
+            commonly 20+ years old.
 
             </div>
             <div>

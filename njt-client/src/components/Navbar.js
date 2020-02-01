@@ -39,7 +39,9 @@ import HomeIcon from '@material-ui/icons/Home';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    fontSize: 30
+    fontSize: 30,
+    maxWidth: '100vw',
+    width: '100%'
   },
   menuButton: {
     marginRight: theme.spacing(1),
@@ -82,6 +84,10 @@ fullList: {
   width: 'auto',
   verticalAlign: 'middle',
 },
+muiFixed: {
+  boxSizing: 'contentBox',
+},
+
 flash: {
   transform: 'rotate(-90deg)',
 },
@@ -90,8 +96,7 @@ arrow: {
   position: 'fixed',
   right: 15,
   top: '50%',
-  zIndex: 3
-
+  zIndex: 5
 },
   menu: {
     fontSize:'2rem',
@@ -249,19 +254,22 @@ export default function Navbar() {
 
           </div>
 
-        </Toolbar>
-      </AppBar>
 
-      <div>
+          <div>
       <Drawer anchor="right" open={state.right} onClose={toggleDrawer('right', false)}>
         {sideList('right')}
       </Drawer>
+
     </div>
-    <Tooltip title="Navigation" placement="left">
-    <div className={classes.arrow}>
-      <ArrowBackIosIcon className={classes.menu} onClick={toggleDrawer('right', true)}/>
-      </div>
-      </Tooltip>
+        </Toolbar>
+      </AppBar>
+      <Tooltip title="Navigation" placement="left">
+      <div className={classes.arrow}>
+        <ArrowBackIosIcon className={classes.menu} onClick={toggleDrawer('right', true)}/>
+        </div>
+        </Tooltip>
+      
+   
     </div>
     </nav>
   );

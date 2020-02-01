@@ -6,7 +6,7 @@ import {
   } from "react-router-dom";
 
 // css
-import '../pages.css';
+import '../App.css';
 
 // images
 import eBackground from '../images/ebackground.jpg';
@@ -271,7 +271,7 @@ class eWaste extends Component {
           </Typography>
             <Typography className={classes.pos} color="textSecondary">
            E-Waste is a world-wide issue and can be toxic to the environment if not handled properly. 
-            NJT is partners with several environmentally-conscious recycling centers. Items will be removed and disposed-of to the proper establishment.
+            NJT is partners with several environmentally-conscious recycling centers. Items will be removed and disposed of to the proper establishment.
             </Typography>
               <img src={crane} className={classes.wasteImages} alt="Sell Electronic E Waste">
               </img>
